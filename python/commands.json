@@ -1,0 +1,39 @@
+{
+  "python": {
+    "installation": {
+      "install Python": "sudo apt-get install python3",
+      "check Python version": "python3 --version",
+      "install pip": "sudo apt-get install python3-pip"
+    },
+    "virtualenv": {
+      "create a virtual environment": "python3 -m venv <env-name>",
+      "activate virtual environment (Linux/Mac)": "source <env-name>/bin/activate",
+      "activate virtual environment (Windows)": "<env-name>\\Scripts\\activate",
+      "deactivate virtual environment": "deactivate"
+    },
+    "package_management": {
+      "install a package": "pip install <package-name>",
+      "uninstall a package": "pip uninstall <package-name>",
+      "list installed packages": "pip list",
+      "freeze installed packages": "pip freeze"
+    },
+    "script_execution": {
+      "run a script": "python3 <script-name>.py",
+      "run a script with arguments": "python3 <script-name>.py <args>",
+      "check script syntax": "python3 -m py_compile <script-name>.py"
+    },
+    "testing": {
+      "run tests with unittest": "python3 -m unittest <test-module>",
+      "run tests with pytest": "pytest <test-directory>",
+      "generate test coverage report": "pytest --cov=<module> --cov-report html"
+    },
+    "linting": {
+      "check code with pylint": "pylint <module>",
+      "check code with flake8": "flake8 <module>"
+    },
+    "formatting": {
+      "format code with black": "black <file-or-directory>",
+      "format code with autopep8": "autopep8 <file-or-directory> --in-place"
+    }
+  }
+}
